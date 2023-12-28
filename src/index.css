@@ -1,6 +1,6 @@
 .header{padding-top: 28px;
 padding-bottom: 22px;
-background-color: hsl(195 11% 14%);
+background-color: #0d1420;
 position: fixed;
 top: 0;
 width: 100%;
@@ -17,6 +17,11 @@ z-index: 999;
   right: 8px;
   top: 32px;
   z-index: 9999;
+}
+.media__icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .media-header {
   position: fixed;
@@ -39,9 +44,16 @@ z-index: 999;
   grid-auto-columns: 1fr;
 }
 .media {
-  width: 32px;
-  aspect-ratio: 1;
-  margin: 5px;
+ display: flex;
+    background-color: #1f2937;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    justify-content: center;
+    margin: 0.3rem 0;
+    transition: all .3s ease-in-out;
+    width: 40px;
+
 }
 a {
   text-decoration: none;
@@ -73,7 +85,7 @@ a {
 .header__link:hover,
 .header__link_active {
   font-weight: bold;
-  color: lightblue; /* Change this color to the desired light blue shade */
+  color: lightblue;
 }
 
 
@@ -88,7 +100,7 @@ a {
   position: relative;
 }
 body, html {
-  background-color: hsl(195 11% 14%);
+  background-color:#111827;
   color: gray;
   font-family: "IBM Plex Mono", monospace;
   display: flex;
@@ -305,8 +317,12 @@ right: 0;
 .skills-container,
 .experience-list {
   display: flex;
-  flex-wrap: wrap;
+
   gap: 10px;
+}
+.skills-container{
+  display: flex;
+  flex-wrap: wrap;
 }
 .experience-list{
   flex-direction: column;
@@ -318,7 +334,7 @@ right: 0;
   justify-content: center;
   text-align: center;
   border-radius: 50%;
-  background-color: red;
+  background-color: #1f2937;
   height: 90px;
     width: 90px;
 }
