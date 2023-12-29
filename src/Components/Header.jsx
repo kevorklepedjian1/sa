@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react';
+import './Header.css'
 
-function Header() {
-    return (
-        <>
-            <header class="header">
-                <input class="hamburger" type="checkbox" aria-label="Menu" />
+function Navbar() {
+  const [isActive, setIsActive] = useState(false);
 
-                <div class="media-header">
+  const handleToggle = () => {
+    setIsActive(!isActive);
+  };
+
+  return (
+    <header>
+ <div class="media-header">
                     <span class="media-header__line"></span>
                     <div class="media-header__links">
 
@@ -26,28 +30,27 @@ function Header() {
 
                     </div>
                 </div>
-                <div className='king'>
-                    <div class="containers">
-                        <div class="header__inner">
-                            <a class="logo" href="/">
-                                <img class="logo__img" src="/images/logo.png" alt="Munirah logo" />
-                                <span class="logo__name">Munirah Alduraibi</span>
-                            </a>
-                            <div class="header__links">
+      <nav className="navbar">
+        <div className="brand-title">Kevork Lepedjian</div>
+        <a href="#" className="toggle-button" onClick={handleToggle}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </a>
+        <div className={`navbar-links ${isActive ? 'active' : ''}`}>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="mailto:kevorklepedjian1@gmail.com">Contact</a></li>
+            
+          </ul>
+        </div>
+      </nav>
 
-                                <a href="/" class="header__link_active header__link ">Home</a>
-
-                                <a href="/projects" class="header__link ">Projects</a>
-
-                                <a href="/about-me" class="header__link ">About me</a>
-
-                                <a class="header__link" >Contact me</a>
-                            </div>
-                        </div>
-                    </div></div>
-            </header>
-        </>
-    )
+      
+    </header>
+  );
 }
 
-export default Header
+export default Navbar;

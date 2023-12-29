@@ -22,7 +22,7 @@ const SkillsBlock = () => {
   return (
     <div className="block-container">
       <div class="projects__header">
-                <h2 class="h2">Projects</h2>
+                <h2 class="h2">Skills & Experience</h2>
              
             </div>
       <div className="skills-container">
