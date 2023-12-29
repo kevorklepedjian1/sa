@@ -375,6 +375,9 @@ right: 0;
   background-color:gray;
   transition: all 0.2s ease;
 }
+.contacts{
+  width: 87%;
+}
 .contact-item{
   display: flex;
   align-items: center;
@@ -388,7 +391,7 @@ right: 0;
     flex-wrap: wrap;
     gap: 32px;
     margin-top: 48px;
-    width: 87%;
+    
 }
 .contacts__description {
   color:gray;
