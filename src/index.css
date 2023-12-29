@@ -39,6 +39,11 @@ z-index: 999;
   gap: 8px;
   top: 80px;
 }
+.lp{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .media-header__line {
   width: 1px;
   height: 35vh;

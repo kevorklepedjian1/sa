@@ -5,6 +5,7 @@ import Projectjs from './Components/Projectjs'
 import Experience from './Components/Experience'
 import Resume from './Components/Resume'
 import About from './Components/About'
+import Contact from './Components/Contact'
 function App() {
   return (
     <div>
@@ -13,6 +14,7 @@ function App() {
       <Projectjs/>
       <Resume/>
       <About/>
+      <Contact/>
     </div>
   )
 }
