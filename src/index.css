@@ -372,8 +372,38 @@ right: 0;
   height: 2px;
   position: absolute;
   top: 30%;
-  background-color: var(--gray);
+  background-color:gray;
   transition: all 0.2s ease;
+}
+.contact-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.contacts__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 48px;
+}
+.contacts__description {
+  color:gray;
+  max-width: 600px;
+}
+.h2 {
+  font-size: 32px;
+  font-weight: 500;
+  position: relative;
+  float: none;
+  clear: both;
+  display: inline-block;
+}
+.contacts__media {
+  border: 1px solid gray;
+  padding: 16px;
 }
 @media (max-width: 1024px){
 .hamburger {
