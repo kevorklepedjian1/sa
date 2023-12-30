@@ -9,7 +9,7 @@ function Projectjs() {
         <section class="projects" id="project">
             <div class="projects__header">
                 <h2 class="h2">Projects</h2>
-               <a class="projects__link" href="/projects">View all → </a>
+               
             </div>
             
             
