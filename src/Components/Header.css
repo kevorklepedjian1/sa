@@ -49,7 +49,7 @@ z-index: 999;
 
 .toggle-button {
     position: absolute;
-    top: 2.75rem;
+    top: 0.95rem;
     right: 1rem;
     display: none;
     flex-direction: column;
